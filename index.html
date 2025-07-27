@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Heads and Tails Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+ <h1>Heads or Tails Game</h1>
+<div class="stylish">
+  <div class="button-container">
+    <button onclick="playGuess('Head')">
+      <img src="Heads.jpeg" alt="Head" />
+    </button>
+    <button onclick="playGuess('Tails')">
+      <img src="Tails.jpeg" alt="Tails" />
+    </button>
+  </div>
+
+</div>
+
+  <div class="status">
+   You:
+    <img src="" id="your_choice" alt="your choice" />
+    Computer:
+    <img src="" id="computer_choice" alt="computer choice" />
+  </div>
+
+  <p class="result" id="res"></p>
+
+  <div class="scoreboard">
+    <p>Wins: <span id="W">0</span></p>
+    <p>Losses: <span id="L">0</span></p>
+  </div>
+
+  <div class="controls">
+    <button onclick="resetScore()">Reset Score</button>
+    <button id="autoPlayBtn" onclick="AutoPlay()">AutoPlay</button>
+  </div>
+  </main>
+ 
+
+  <script src="script.js"></script>
+</body>
+</html>
